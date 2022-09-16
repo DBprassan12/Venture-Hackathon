@@ -7,11 +7,14 @@
     "start": "electron ."
   },
   "repository": "https://github.com/kai-jinny/Venture-Hackathon",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "kai-jinny, cookies-xor-cream, miltypig, ya-shuo, Gradialas",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^20.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-flow-renderer": "^10.3.17"
   }
 }
