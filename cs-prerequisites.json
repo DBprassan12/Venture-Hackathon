@@ -1,0 +1,82 @@
+{
+    "MATH1720": {
+        "prereqs": []
+    },
+    "MATH1721": {
+        "prereqs": [
+            "MATH1720"
+        ]
+    },
+    "CITS1001": {
+        "prereqs": [
+            "MATH1720"
+        ]
+    },
+    "CITS1003": {
+        "prereqs": []
+    },
+    "CITS2002": {
+        "prereqs": [
+            "CITS1001"
+        ]
+    },
+    "CITS2200": {
+        "prereqs": [
+            "MATH1721",
+            "CITS1001"
+        ]
+    },
+    "CITS2211": {
+        "prereqs": [
+            "MATH1721"
+        ]
+    },
+    "CITS3001": {
+        "prereqs": [
+            "CITS2200"
+        ]
+    },
+    "CITS3002": {
+        "prereqs": [
+            "CITS2002"
+        ]
+    },
+    "CITS3200": {
+        "prereqs": [
+            "CITS1001",
+            "CITS2002",
+            "CITS2200"
+        ]
+    },
+    "CITS3403": {
+        "prereqs": [
+            "CITS1001",
+            "CITS2002"
+        ]
+    },
+
+    "CITS3003": {
+        "prereqs": [
+            "CITS1001",
+            "CITS2002"
+        ]
+    },
+    "CITS3005": {
+        "prereqs": [
+            "CITS2200",
+            "CITS2211"
+        ]
+    },
+    "CITS3007": {
+        "prereqs": [
+            "CITS1001",
+            "CITS1402"
+        ]
+    },
+    "CITS3402": {
+        "prereqs": [
+            "CITS2002"
+        ]
+    }
+}
+  
