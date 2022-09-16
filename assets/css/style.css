@@ -84,36 +84,36 @@ transition:         color 0.5s;
 }
 
 .logoImage:hover {
-  color: #db6060;
-  animation: fly 1s infinite; 
+  color: #F2BA40;
+  animation: fly 0.8s infinite; 
 }
 
 @-webkit-keyframes fly {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(0px, -10px) rotate(-10deg); }
+    20% { transform: translate(0px, -11px) rotate(-20deg); }
+    30% { transform: translate(0px, -12px) rotate(-30deg); }
+    40% { transform: translate(0px, -13px) rotate(-40deg); }
+    50% { transform: translate(0px, -14px) rotate(-50deg); }
+    60% { transform: translate(0px, -15px) rotate(-180deg); }
+    70% { transform: translate(0px, -15px) rotate(-360deg); }
+    80% { transform: translate(0px, -10px) rotate(-360deg); }
+    90% { transform: translate(0px, -5px) rotate(-360deg); }
+    100% { transform: translate(0px, -0px) rotate(-360deg); }
 }
 
 @keyframes fly {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  10% { transform: translate(0px, -10px) rotate(-10deg); }
+  20% { transform: translate(0px, -11px) rotate(-20deg); }
+  30% { transform: translate(0px, -12px) rotate(-30deg); }
+  40% { transform: translate(0px, -13px) rotate(-40deg); }
+  50% { transform: translate(0px, -14px) rotate(-50deg); }
+  60% { transform: translate(0px, -15px) rotate(-180deg); }
+  70% { transform: translate(0px, -15px) rotate(-360deg); }
+  80% { transform: translate(0px, -10px) rotate(-360deg); }
+  90% { transform: translate(0px, -5px) rotate(-360deg); }
+  100% { transform: translate(0px, -0px) rotate(-360deg); }
 }
 
 /**/
@@ -130,6 +130,7 @@ a {
 }
 
 a:hover,
+
 a:active,
 a:focus {
   color: #656566;
@@ -214,7 +215,7 @@ h6 {
   right: 20px;
   bottom: 15px;
   z-index: 995;
-  background: #7B6567;
+  background: #798FC7;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -228,7 +229,7 @@ h6 {
 }
 
 .floatingButton:hover {
-  background: #A38F91;
+  background: #859DDB;
   color: #fff;
 }
 
@@ -273,7 +274,7 @@ h6 {
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
-  color: #656566;
+  color: #FEF3BE;
 }
 
 #header #logo img {
@@ -286,7 +287,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(52, 59, 64, 0.9);
+  background: #859ddb6f;
   height: 70px;
   transition: all 0.5s;
 }
@@ -306,7 +307,7 @@ h6 {
 #searcher {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bgTop.png);
+  background-color: #859ddb;
   background-size: cover;                      /* <------ */
   background-repeat: no-repeat;
   background-position: center center; 
@@ -314,7 +315,7 @@ h6 {
 }
 
 #searcher {
-  background-image: url(../img/bgBot.png);
+    background-image: url(../img/Ezone-Edited.jpg);
 }
 
 @media (min-width: 1024px) {
@@ -401,8 +402,8 @@ h6 {
 
 #searcher .btn-get-started:hover,
 #hero .btn-get-started:hover {
-  background: #91787A;
-  border: 2px solid #A38F91;
+  background: #6476A5;
+  border: 2px solid #A0B6E7;
 }
 
 .form-label {
@@ -441,9 +442,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background:#4b4044;
+  background: #465372;
   padding: 10px;
-  color: #fff;
+  color: #FCF9EE;
   font-size: 14px;
 }
 
@@ -454,7 +455,7 @@ section {
 #footer .credits {
   text-align: center;
   font-size: 13px;
-  color: #959595;
+  color: #CCCCCC;
   position: absolute;
   margin-bottom: -60px;
 }
