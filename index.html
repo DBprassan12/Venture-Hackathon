@@ -1,19 +1,133 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+<html lang="en">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>UWA Degree Planner</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Import FA -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <div id="logo">
+                <i class="fa-solid fa-meteor logoImage"></i>
+            </div>
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>UWA Degree Planner</h1>
+            <h2>A search to help you plan your degree...</h2>
+            <a href="#searcher" class="btn-get-started" onclick="">Get Started</a>
+        </div>
+    </section><!-- End Hero Section -->
+
+    <!-- ======= Form Section ======= -->
+    <section id="searcher">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Sort Out Uni Life</h1>
+            <div class="container-fluid">
+                <form id="userInput">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="major" class="form-label" style="color:white;" >Major</label>
+                                    <input type="text" id="major" class="form-control">
+                                    <div id="help" class="form-text" style="color:rgba(211, 211, 211, 0.345);"></div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="handbookYear" class="form-label" style="color:white;">Handbook Year</label>
+                                    <input type="date" id="handbookYear" class="form-control">
+                                    <div id="help" class="form-text" style="color:rgba(211, 211, 211, 0.345);">The year you started your degree</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-get-started">Find Your Units!</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Form Section -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="social-icons">
+                <div
+                    class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-lg-0">
+                    <a class="btn btn-dark m-3" id="socialIcon" href="https://github.com/kai-jinny/spacerocks" target="_blank"><i
+                            class="fab fa-github" ></i></a>
+                            <p class="credits">MIT © Jinny (Kai Jin) 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="close" class="tooltip floatingButton d-flex align-items-center justify-content-center"><span class="tooltiptext">Toggle Data Table</span>
+        <i class="fa-solid fa-table" style="color:#CCCCCC"></i></div>
+    <div id="export" class="tooltip floatingButton d-flex align-items-center justify-content-center" onclick="download_table_as_csv('excelDataTable')"><span class="tooltiptext">Export Data to CSV</span>
+        <i class="fa-solid fa-file-export" style="color:#CCCCCC"></i>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Importing Scripts from Main -->
+    <script type="text/javascript" src="./assets/js/apiScripts.js">
+        window.onload = dateQuery();
+        window.onload =  pointerOff(); 
+        window.onload = download_table_as_csv();
+    </script>
+
+    <!-- JQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    
+    <!-- Menu Actions and Page Interactions-->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>
