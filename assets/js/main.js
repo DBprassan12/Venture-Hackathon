@@ -128,3 +128,12 @@
 
 })()
 
+function animateLogo() {
+  $( ".logoImage" ).hover(
+  function() {
+    $( ".logoImage2" ).css( "opacity", 1 );
+  }, function() {
+    $( ".logoImage2" ).css( "opacity", 0 );
+  }
+);
+};

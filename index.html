@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>UWA Degree Planner</title>
+    <title>plan°</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -36,47 +36,55 @@
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex justify-content-between align-items-center">
 
+            <!--
             <div id="logo">
-                <i class="fa-solid fa-graduation-cap logoImage"></i>
+                <img src="./assets/img/plan-logo.png" class=logoImage></i>
             </div>
+            -->
+
+            <div id="logo">
+                <h2 class=logoImage>p°<span class="logoImage2">|</span></h2>
+            </div>
+
         </div>
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>UWA Degree Planner</h1>
-            <h2>A search to help you plan your degree...</h2>
-            <a href="#searcher" class="btn-get-started" onclick="">Get Started</a>
+            <h1>plan°</h1>
+            <h2>a search to help you on your journey...</h2>
+            <a href="#searcher" class="btn-get-started" onclick="">get started</a>
         </div>
     </section><!-- End Hero Section -->
 
     <!-- ======= Form Section ======= -->
     <section id="searcher">
         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Sort Out Uni Life</h1>
+            <h1>sort out uni life</h1>
             <div class="container-fluid">
                 <form id="userInput">
                     <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <label for="major" class="form-label" style="color:white;" >Major</label>
+                                    <label for="major" class="form-label" style="color:white;" >major</label>
                                     <input type="text" id="major" class="form-control">
-                                    <div id="help" class="form-text" style="color:rgba(211, 211, 211, 0.345);"></div>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div class="mb-3">
-                                    <label for="handbookYear" class="form-label" style="color:white;">Handbook Year</label>
-                                    <input type="date" id="handbookYear" class="form-control">
-                                    <div id="help" class="form-text" style="color:rgba(211, 211, 211, 0.345);">The year you started your degree</div>
+                                    <label for="handbookYear" class="form-label" style="color:white;">handbook year</label>
+                                    <input id=handbookYear class="form-control" type="number" min="2000" max="2030" step="1" value="2022" />
+                                    <div class=flexer>
+                                        <div id="help" class="form-text">year you started your degree</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="graph.html" class="btn-get-started">Find Your Units!</a>
+                    <a href="graph.html" class="btn-get-started">find your units</a>
                 </form>
             </div>
         </div>
@@ -102,18 +110,19 @@
         </div>
     </footer><!-- End Footer -->
 
-    <div id="close" class="tooltip floatingButton d-flex align-items-center justify-content-center"><span class="tooltiptext">Toggle Data Table</span>
+    <!--<div id="close" class="tooltip floatingButton d-flex align-items-center justify-content-center"><span class="tooltiptext">Toggle Data Table</span>
         <i class="fa-solid fa-table" style="color:#CCCCCC"></i></div>
     <div id="export" class="tooltip floatingButton d-flex align-items-center justify-content-center" onclick="download_table_as_csv('excelDataTable')"><span class="tooltiptext">Export Data to CSV</span>
         <i class="fa-solid fa-file-export" style="color:#CCCCCC"></i>
-    </div>
+    </div>-->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js">
+    </script>
 
     <!-- Importing Scripts from Main -->
     <script type="text/javascript" src="./assets/js/apiScripts.js">
@@ -122,9 +131,11 @@
         window.onload = download_table_as_csv();
     </script>
 
+
+
     <!-- JQuery -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-    
+
     <!-- Menu Actions and Page Interactions-->
     <script src="./assets/js/script.js"></script>
 

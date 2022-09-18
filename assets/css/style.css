@@ -1,5 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+@font-face {
+  font-family: Garet;
+  src: url("./Garet-Book.otf") format("opentype");
+}
 
+#help {
+  background-color: rgba(128, 128, 128, 0.417);
+  color: rgba(211, 211, 211, 0.345); 
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  transition: all 0.15s;
+}
+
+#help:hover {
+  background-color: rgba(128, 128, 128, 0.825);
+  color: rgba(211, 211, 211, 0.652); 
+}
+
+.flexer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @-webkit-keyframes phaseDown {
   0% {
@@ -75,6 +97,7 @@ overflow-x: hidden;
 color: #CCCCCC;
 width: 30px;
 height: 30px;
+margin: 0!important;
 -webkit-transition:  color 0.5s;
 -moz-transition:    color 0.5s;
 -ms-transition:     color 0.5s;
@@ -83,9 +106,17 @@ transition:         color 0.5s;
 
 }
 
-.logoImage:hover {
-  color: #F2BA40;
-  animation: fly 0.8s infinite; 
+.logoImage2{
+  color: rgb(147, 146, 146);
+  opacity:0;
+  transition: all 2s;
+  animation: fade ease-in-out 2s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1;}
+  100% { opacity: 0;}
 }
 
 @-webkit-keyframes fly {
@@ -121,7 +152,7 @@ transition:         color 0.5s;
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: Garet;
 }
 
 a {
@@ -149,7 +180,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: Garet;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -266,10 +297,9 @@ h6 {
   font-size: 32px;
   margin: 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: Garet;
   font-weight: 700;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #header #logo h1 a,
@@ -356,14 +386,13 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  text-transform: uppercase;
   color: #fff;
 }
 
 @media (max-width: 768px) {
   #searcher h1,
   #hero h1 {
-    font-size: 28px;
+    /*font-size: 28px;*/
     line-height: 36px;
   }
 }
@@ -386,8 +415,7 @@ h6 {
 
 #searcher .btn-get-started,
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+  font-family: Garet;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
